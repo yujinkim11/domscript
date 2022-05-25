@@ -6,17 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM</title>
 
-    <script>
 
-        // * DOM
-        // =>Document Object Model의 약자
-        아아아아아ㅏ앙
-
-    </script>
 
 
 </head>
 <body>
+
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+
+    <script>
+
+        // * DOM
+        // =>Document Object Model의 약자
+        // => 반드시 body 최 하단에 스크립트를 작성해야 원하는 선택자를 선택할 수 있음
+
+        // const boxEl = document.querySelector('.box');
+        // => body 내부에 있는 클래스, 아이디, 태그, 자식, 자손, 구조선택자 등을 선택할 수 있음
+        // => 여러(같은 클래스명) 클래스일 경우 첫번째 태그만 선택함
+        // console.log(boxEl);
+        
+        const boxEl_2 = document.querySelector('.box:nth-child(2)');
+        console.log(boxEl_2);
+
+        
+
+
+    </script>
     
 </body>
 </html>
