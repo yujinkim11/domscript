@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM</title>
 
+    <!-- <style>
+
+        .box_3[data-pizza="pizzaHut"]{
+            font-size: 50px;
+        }
+
+    </style> -->
 
 
 
@@ -15,6 +22,7 @@
     <div class="box">1</div>
     <div class="box">2</div>
     <div class="box">3</div>
+    <!-- <div class="box box_3" data-pizza="pizzaHut">3</div> -->
 
     <script>
 
@@ -30,13 +38,23 @@
         // const boxEl_2 = document.querySelector('.box:nth-child(2)');
         // console.log(boxEl_2);
 
-        const boxAll = document.querySelectorAll('.box');
+        // const boxAll = document.querySelectorAll('.box');
         // => 여러 클래스를 선택해올 수 있음
         // => 단, 선택할 때 배열 형태로 반환 시켜줌
         // => 원하는 선택자를 선택하고 싶을 땐 배열 형식으로 선택해주면 됨([]안에 원하는 선택자 넣기)
-        console.log(boxAll[2]);
+        // console.log(boxAll[2]);
+
+        const boxEl_1 = document.querySelector('.box:nth-child(1)');
+        // console.log(boxEl_1);
+        boxEl_1.setAttribute('data-chicken', 'bbq');
+        // => setAttribute: data-xx 속성을 세팅해줌
+        // => 선택자.setAttribute('data-xx', '값')
 
 
+        const getAttr = boxEl_1.getAttribute('data-chicken');
+        console.log(getAttr);
+        // => getAttribute: 세팅된 Attribute를 가져올 수 있음
+        // => 선택자.getAttribute('data-xx')
         
 
 
