@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문제</title>
+</head>
+<body>
+
+
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+
+
+    <script>
+
+        // const boxEl_1 = document.querySelector('.box:nth-child(1)');
+        // boxEl_1.setAttribute('data-id','1');
+
+        // const boxEl_2 = document.querySelector('.box:nth-child(2)');
+        // boxEl_2.setAttribute('data-id','2');
+
+        // const boxEl_3 = document.querySelector('.box:nth-child(3)');
+        // boxEl_3.setAttribute('data-id','3');
+
+        // const boxEl_4 = document.querySelector('.box:nth-child(4)');
+        // boxEl_4.setAttribute('data-id','4');
+
+
+        const boxAll = document.querySelectorAll('.box');
+        boxAll[0].setAttribute('data-id','1');
+        boxAll[1].setAttribute('data-id','2');
+        boxAll[2].setAttribute('data-id','3');
+        boxAll[3].setAttribute('data-id','4');
+
+        
+
+    </script>
+    
+</body>
+</html>
+
+
+    <!-- * 문제  
+    => 4개의 선택자한테 data-id값을 추가하기 -->
